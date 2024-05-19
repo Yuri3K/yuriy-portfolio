@@ -1,1 +1,0 @@
-Portfolio fron-end developer Yuriy Sidorenko
