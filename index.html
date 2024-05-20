@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="./images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./css/style.min.css">
+
+    <!-- <link rel="stylesheet" href="css/my_reset.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="css/style.css"> -->
+
+
+<body id="body">
+
+    <a class="top" href="#body"></a>
+
+    <video class="video" src="./images/video/bg.mp4" autoplay muted loop></video>
+
+    <header class="header">
+
+        <div class="container">
+            <nav class="menu">
+                <a class="logo" href="#body">
+                    <img class="logo__img" src="./images/logo.png" width="47" height="53" alt="Логотип">
+                </a>
+
+                <button class="menu__btn" type="button">
+                    <span class="menu__line"></span>
+                    <span class="sr-only">Menu</span>
+                </button>
+
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#about">
+                            About me
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#skills">
+                            Skills
+                        </a>
+                    </li>
+                    <!-- <li class="menu__item">
+                        <a class="menu__link" href="#services">
+                            Услуги
+                        </a>
+                    </li> -->
+                    <li class="menu__item">
+                        <a class="menu__link" href="#project">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#reviews">
+                            Отзывы
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#contacts">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__inner">
+                <h1 class="header__title">
+                    Hello, I'm Yuriy Sidorenko
+                    <span class="header__subtitle">
+                        front-end developer
+                    </span>
+                </h1>
+
+            </div>
+            <a class="header__arrow" href="#project">
+                See works
+            </a>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="title">About me</h2>
+                <div class="about__text">
+                    <p>
+                        Hi everyone! My name is Yuri, and I am a front-end developer. A few years ago, I decided to change my career path and tried my hand at front-end development. I quickly realized that this job is very interesting to me.
+                    </p>
+                    <p>
+                        The first step in my development was completing a course on website layout. Next, I took a course on JavaScript. After consolidating my knowledge, I moved on to studying the Angular framework. As it turned out, to work with this framework, you need to know TypeScript and RxJS. Therefore, I completed courses in TypeScript, then Angular, and finally RxJS. I really enjoy that in this profession, you can't stay in one place. You have to keep learning new and useful things all the time.
+                    </p>
+                    <p>
+                        I would be happy to become part of a team and find new friends who, like me, strive to become better every day!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="title">Skills</h2>
+
+                <div class="skills__content">
+                    <img class="skills__img" src="./images/my-photo.jpg" width="300" height="450" alt="Мое фото">
+
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            HTML
+                            <div class="skills__bar">
+                                <span class="skills__progress" style="width: 85%"></span>
+                            </div>
+                        </li>
+                        <li class="skills__item">
+                            CSS
+                            <div class="skills__bar">
+                                <span class="skills__progress" style="width: 80%"></span>
+                            </div>
+                        </li>
+                        <li class="skills__item">
+                            JS
+                            <div class="skills__bar">
+                                <span class="skills__progress" style="width: 75%"></span>
+                            </div>
+                        </li>
+                        <li class="skills__item">
+                            TS
+                            <div class="skills__bar">
+                                <span class="skills__progress" style="width: 70%"></span>
+                            </div>
+                        </li>
+                        <li class="skills__item">
+                            Angular
+                            <div class="skills__bar">
+                                <span class="skills__progress" style="width: 60%"></span>
+                            </div>
+                        </li>
+                        <li class="skills__item">
+                            RxJs
+                            <div class="skills__bar">
+                                <span class="skills__progress" style="width: 50%"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="services section" id="services">
+            <div class="container">
+                <h2 class="title">Услуги</h2>
+                <ul class="services__list">
+                    <li class="services__item services__item--code">
+                        <h3 class="services__subtitle">
+                            Вёрстка проектов
+                        </h3>
+                        <p class="services__text">
+                            Делаю качественную вёрстку проекта по предоставленному макету или примеру
+                        </p>
+                    </li>
+                    <li class="services__item services__item--dev">
+                        <h3 class="services__subtitle">
+                            Динамика
+                        </h3>
+                        <p class="services__text">
+                            Подключаю необходимые плагины к проекту для добавления сайту динамики
+                        </p>
+                    </li>
+                    <li class="services__item services__item--chat">
+                        <h3 class="services__subtitle">
+                            W3C
+                        </h3>
+                        <p class="services__text">
+                            Сайты проходят тест на валидацию
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section> -->
+
+        <section class="project section" id="project">
+            <div class="container">
+
+                <h2 class="title project__title">My projects</h2>
+                <ul class="project__filter">
+                    <li class="project__box">
+                        <button class="project__button works" type="button" data-filter="all">All</button>
+                    </li>
+                    <li class="project__box">
+                        <button class="project__button works" type="button"
+                            data-filter=".category-landing">Landing</button>
+                    </li>
+                    <li class="project__box">
+                        <button class="project__button corp" type="button"
+                            data-filter=".category-shops">Internet-market</button>
+                    </li>
+                </ul>
+
+                <ul class="project__show">
+                    <li class="project__item mix category-landing">
+                        <a class="project__link" href="http://zebraw0w.beget.tech/" target="_blank">
+                            <img class="project__img" src="./images/show/1.jpg" width="360" height="360"
+                                alt="Река через город">
+                        </a>
+                    </li>
+                    <li class="project__item mix category-shops">
+                        <a class="project__link" href="http://freshok.zebraw0w.beget.tech/" target="_blank">
+                            <img class="project__img" src="./images/show/2.jpg" width="360" height="360"
+                                alt="Лодки на реке">
+                        </a>
+                    </li>
+                    <li class="project__item mix all">
+                        <a class="project__link" data-fancybox="gallery" href="images/show/3.jpg">
+                            <img class="project__img" src="./images/show/3.jpg" width="360" height="360" alt="Мост">
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- <button class="btn" type="button">Загрузить еще</button> -->
+
+            </div>
+        </section>
+
+        <section class="reviews section" id="reviews">
+            <div class="container">
+                <h2 class="title reviews__title">My Certificates</h2>
+                <div class="reviews__inner">
+                    <div class="reviews__box">
+                        <div class="reviews__client">
+                            <img class="reviews__photo" src="./images/client1.jpg" width="134" height="130"
+                                alt="Марк Цукерберг">
+                            <blockquote class="reviews__quote">
+                                <cite class="reviews__author">Алиса Иванова</cite>
+                                Замечательно! Заказ был выполнен в полном объеме и в указанный срок.
+                            </blockquote>
+                        </div>
+                        <a class="reviews__link" style="background-image: url('./images/video-bg.jpg');" data-fancybox
+                            href="video/video2.mp4">
+                            <span class="sr-only">Смотреть видеоотзыв</span>
+                        </a>
+                    </div>
+                    <div class="reviews__box">
+                        <div class="reviews__client">
+                            <img class="reviews__photo" src="./images/client2.jpg" width="134" height="130"
+                                alt="Марк Цукерберг">
+                            <blockquote class="reviews__quote">
+                                <cite class="reviews__author">Грэтта МакЧиккенс</cite>
+                                Фантастика! Я всецело доволена
+                                работой этого специалиста.
+                                Быстро и качественно. Рекомендую!
+                            </blockquote>
+                        </div>
+                        <a class="reviews__link" style="background-image: url('./images/video-bg2.jpg');" data-fancybox
+                            href="video/video.mp4">
+                            <span class="sr-only">Смотреть видеоотзыв</span>
+                        </a>
+                    </div>
+                    <div class="reviews__box">
+                        <div class="reviews__client">
+                            <img class="reviews__photo" src="./images/client3.jpg" width="134" height="130"
+                                alt="Марк Цукерберг">
+                            <blockquote class="reviews__quote">
+                                <cite class="reviews__author">Роберт Фишер</cite>
+                                Отлично! Притензий нет. Все супер!!!
+                            </blockquote>
+                        </div>
+                        <a class="reviews__link" style="background-image: url('./images/video-bg3.jpg');" data-fancybox
+                            href="video/video3.mp4">
+                            <span class="sr-only">Смотреть видеоотзыв</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts section" id="contacts">
+            <div class="container">
+                <h2 class="title">Контакты</h2>
+                <div class="contacts__inner">
+                    <address class="contacts__connection">
+                        <p class="contacts__text">
+                            Связаться со мной можно по номеру телефона, email или в соцсетях:
+                        </p>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <a class="contacts__link" href="tel:+380674453563">
+                                    +38 (067) 445 35 63
+                                </a>
+                            </li>
+                            <li class="contacts__item">
+                                <a class="contacts__link" href="mailto:urij08144@gmail.com">
+                                    urij08144@gmail.com
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="social">
+                            <li class="social__item">
+                                <a class="social__link social__link--instagram" href="https://telegram.im/@Yuri9_3K"
+                                    target="_blank">
+                                    <span class="sr-only">Перейти в инстаграм</span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__link--facebook" href="https://telegram.im/@Yuri9_3K"
+                                    target="_blank">
+                                    <span class="sr-only">Перейти в Фейсбук</span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__link--telegram" href="https://telegram.im/@Yuri9_3K"
+                                    target="_blank">
+                                    <span class="sr-only">Перейти в Телеграм</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+
+                    <form class="form" action="#">
+                        <div class="form__top">
+
+                            <label class="form__label">
+                                Ваше имя
+                                <input class="form__field" type="text" placeholder="Александр" name="name"
+                                    aria-label="Введите своё имя" required>
+                            </label>
+
+                            <label class="form__label">
+                                Номер телефона
+                                <input class="form__field" type="tel" placeholder="+38 067 445 35 63" name="phone"
+                                    aria-label="Введите ваш контактный телефон" required>
+                            </label>
+                        </div>
+
+                        <label class="form__label form__label--textarea">
+                            Ваше сообщение
+                            <textarea class="form__field" placeholder="Текст вашего сообщения"
+                                name="message"></textarea>
+                        </label>
+
+                        <button class="btn" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a class="logo" href="#body">
+            <img class="logo__img" src="./images/logo.png" width="47" height="53" alt="Логотип">
+        </a>
+    </footer>
+
+    <script src="./js/main.min.js"></script>
+
+    <!-- <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
+    <script src="js/main.js"></script> -->
+</body>
+
+</html>
