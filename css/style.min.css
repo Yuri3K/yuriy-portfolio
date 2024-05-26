@@ -1660,72 +1660,10 @@ button {
           align-items: center;
   width: 48.6%;
   height: 400px;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 0;
-}
-
-.reviews__link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.3;
-  background-color: #000;
-  z-index: -1;
-  -webkit-transition: opacity 0.5s;
-  -o-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-}
-
-.reviews__link::before {
-  content: "";
-  position: absolute;
-  width: 85px;
-  height: 100px;
-  background-image: url("../images/play.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 0;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  -o-transition: transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-}
-
-.reviews__link:hover::after {
-  opacity: 0.6;
-}
-
-.reviews__link:focus::after {
-  opacity: 0.3;
-}
-
-.reviews__link:active::after {
-  opacity: 0.45;
-}
-
-.reviews__link:hover::before {
-  -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-          transform: scale(1.5);
-}
-
-.reviews__link:focus::before {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-.reviews__link:active::before {
-  -webkit-transform: scale(0.6);
-      -ms-transform: scale(0.6);
-          transform: scale(0.6);
 }
 
 .slick-dots {
@@ -1844,22 +1782,35 @@ button {
 }
 
 .contacts__connection {
-  width: 45%;
+  width: 100%;
   font-size: 16px;
   font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .contacts__text {
-  margin-bottom: 35px;
+  /* margin-bottom: 35px; */
   line-height: 1.6;
+  max-width: 180px;
 }
 
 .contacts__list {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .contacts__item {
   margin-bottom: 15px;
+}
+
+.contacts__item:last-child {
+  margin-bottom: 0;
 }
 
 .contacts__link {
@@ -1909,6 +1860,7 @@ button {
   -o-transition: opacity 0.5s, box-shadow 0.5s;
   transition: opacity 0.5s, box-shadow 0.5s;
   transition: opacity 0.5s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  fill: #2352DE;
 }
 
 .social__link:hover {
@@ -1917,18 +1869,6 @@ button {
 
 .social__link:active {
   opacity: 0.9;
-}
-
-.social__link--instagram {
-  background-image: url("../images/contacts/instagram.svg");
-}
-
-.social__link--facebook {
-  background-image: url("../images/contacts/facebook.svg");
-}
-
-.social__link--telegram {
-  background-image: url("../images/contacts/telegram.svg");
 }
 
 .form {
@@ -2330,25 +2270,28 @@ button {
     margin-bottom: 40px;
   }
 
+  .reviews__quote {
+    margin-bottom: 30px;
+  }
+
   .reviews__link {
-    position: absolute;
+    width: 100%;
+    /* position: absolute;
     width: 75px;
     height: 75px;
     border-radius: 50%;
     left: 54%;
-    top: 105px;
+    top: 105px; */
   }
 
-  .reviews__link::after {
-    border-radius: 50%;
-  }
-
-  .reviews__link::before {
-    width: 25px;
-    height: 28px;
-    left: 29px;
-  }
-
+  /* .reviews__link::after {
+      border-radius: 50%;
+  } */
+  /* .reviews__link::before {
+      width: 25px;
+      height: 28px;
+      left: 29px;
+  } */
   .contacts {
     padding-top: 0;
   }
@@ -2411,19 +2354,17 @@ button {
     height: auto;
   }
 
-  .reviews__link {
-    width: 60px;
-    height: 60px;
-    top: 90px;
-    left: 54.5%;
-  }
-
-  .reviews__link::before {
-    width: 17px;
-    height: 25px;
-    left: 24px;
-  }
-
+  /* .reviews__link {
+      width: 60px;
+      height: 60px;
+      top: 90px;
+      left: 54.5%;
+  } */
+  /* .reviews__link::before {
+      width: 17px;
+      height: 25px;
+      left: 24px;
+  } */
   .reviews__quote {
     max-width: 280px;
     font-size: 16px;
@@ -2469,8 +2410,11 @@ button {
     margin-bottom: 40px;
   }
 
-  .contacts__list {
-    margin-bottom: 30px;
+  /* .contacts__list {
+      margin-bottom: 30px;
+  } */
+  .social__item:not(:last-child) {
+    margin-right: 10px;
   }
 
   .form {
@@ -2561,16 +2505,29 @@ button {
             transform: translateX(0);
   }
 
-  .reviews__link {
-    left: 57.5%;
+  .reviews__quote {
+    margin-bottom: 0;
   }
 
+  /* .reviews__link {
+      left: 57.5%;
+  } */
   .contacts {
     padding-top: 0;
   }
 
+  .contacts__text {
+    max-width: 100%;
+    text-align: center;
+  }
+
   .contacts__connection {
     margin-bottom: 35px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 25px;
   }
 
   .form__top {
